@@ -108,7 +108,7 @@ public class DragTextView extends android.support.v7.widget.AppCompatEditText {
                 Selection.setSelection(getEditableText(),off,curOff);
                 if(getEditableText() != null && getEditableText().length() > 0){
                     if(off<0 || curOff<0 || off>=getEditableText().length() || curOff>getEditableText().length() || off>curOff){
-                        Log.e("DragTextView","selectedStr index error");
+                        //Log.e("DragTextView","selectedStr index error");
                         break;
                     }else{
                         if(off == curOff){
